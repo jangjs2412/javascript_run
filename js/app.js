@@ -14,7 +14,8 @@ myName="User";
 console.log("Your name is "+myName);
 */
 
-//boolean(true,false), null, undefined(값이 없을 때)
+//2.boolean(true,false), null, undefined(값이 없을 때)
+/*
 const amIfat=null;
 let something;
 let true_result=true;
@@ -22,3 +23,13 @@ let false_result=false;
 
 console.log(something ,amIfat);
 console.log(true_result, false_result);
+*/
+
+//3.array
+const daysOfWeek = ["mon","tue","wed","thu","fri","sat"];
+
+console.log(daysOfWeek[2]);
+console.log(daysOfWeek[6]);
+
+daysOfWeek.push("sun");
+console.log(daysOfWeek[6]);
