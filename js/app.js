@@ -26,6 +26,7 @@ console.log(true_result, false_result);
 */
 
 //3.array
+/*
 const daysOfWeek = ["mon","tue","wed","thu","fri","sat"];
 
 console.log(daysOfWeek[2]);
@@ -33,3 +34,28 @@ console.log(daysOfWeek[6]);
 
 daysOfWeek.push("sun");
 console.log(daysOfWeek[6]);
+*/
+
+//4.object
+const playerName="jjy";
+const playerNumber=10;
+const playerLevel=85;
+const playerJob="knight";
+
+const player = {
+    name:"jjy",
+    number:10,
+    level:85,
+    job:"knight"
+};
+
+console.log(player);
+console.log(player.name);
+
+player.number = 60;
+
+console.log(player);
+console.log(player.number);
+
+player.lastname="tomato";
+console.log(player);
