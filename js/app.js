@@ -93,7 +93,6 @@ function multi(a,b){
 plus(5,3);
 minus(8,4);
 multi(5,3);
-*/
 
 const player={
     name:"jjy",
@@ -106,3 +105,27 @@ const player={
 }
 
 player.sayHello("jaeyong");
+*/
+//calculator
+const calculator={
+    add:function(a,b){
+        console.log(a+b);
+    },
+    minus:function(a,b){
+        console.log(a-b);
+    },
+    divide:function(a,b){
+        console.log(a/b);
+    },
+    multi:function(a,b){
+        console.log(a*b);
+    },
+    multimulti:function(a,b){
+        console.log(a**b);
+    },
+}
+calculator.add(6,5);
+calculator.minus(6,5);
+calculator.divide(6,5);
+calculator.multi(6,5);
+calculator.multimulti(6,5);
