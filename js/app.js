@@ -107,6 +107,7 @@ const player={
 player.sayHello("jaeyong");
 */
 //calculator
+/*
 const calculator={
     add:function(a,b){
         console.log(a+b);
@@ -129,3 +130,33 @@ calculator.minus(6,5);
 calculator.divide(6,5);
 calculator.multi(6,5);
 calculator.multimulti(6,5);
+*/
+
+//6.return
+//return은 함수 안에서 가장 마지막으로 값을 반환한다.
+//함수가 return까지만 수행되고 return이후에는 실행되지않는다.
+const age = 30;
+function calculateKrAge(ageOfForeigner){
+    return ageOfForeigner +2;
+}
+
+const krAge = calculateKrAge(age);
+console.log(krAge);
+
+const calculator={
+    add:function(a,b){
+        return a+b;
+    },
+    minus:function(a,b){
+        return a-b;
+    },
+    divide:function(a,b){
+        return a/b;
+    },
+    multi:function(a,b){
+        return a*b;
+    },
+    multimulti:function(a,b){
+        return a**b;
+    },
+}
