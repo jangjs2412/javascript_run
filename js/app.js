@@ -135,6 +135,7 @@ calculator.multimulti(6,5);
 //6.return
 //return은 함수 안에서 가장 마지막으로 값을 반환한다.
 //함수가 return까지만 수행되고 return이후에는 실행되지않는다.
+/*
 const age = 30;
 function calculateKrAge(ageOfForeigner){
     return ageOfForeigner +2;
@@ -160,3 +161,46 @@ const calculator={
         return a**b;
     },
 }
+*/
+/* 연습
+let i;
+let arr=[-100,7,6,0,-300,-5,2,1,1000];
+let mincnt=1;
+let result;
+for(i=0;i<arr.length;i++){
+    if(arr[i]<0){
+        arr[i]=0;
+    }
+}
+console.log(arr.length);
+console.log(arr);
+arr = arr.filter(Boolean);
+console.log(arr.length);
+console.log(arr);
+function test(){
+    i=0;
+    while(i<arr.length){
+        if(arr[i]==mincnt){
+            mincnt+=1;
+            i=0;
+        }
+        else{
+            i++;
+        }
+    return mincnt;
+    }
+}
+console.log(test());
+*/
+
+//7.conditionals
+//prompt()함수는 창을 띄운다. 답을 할때까지 코드의 실행을 멈춰서 다른 동작은 못한다.(쓰지말자)
+const age = prompt("How old are you?");
+console.log(age);
+
+//typeof 변수 --> 변수의 타입을 알수있다.
+console.log(typeof age);
+
+//prompt의 디폴트값이 string이기 때문에 숫자를 입력해도 문자형으로 나온다.
+//ParseInt()는 string을 number로 변환시킨다.
+console.log(typeof parseInt(age));
