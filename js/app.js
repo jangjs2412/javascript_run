@@ -192,8 +192,8 @@ function test(){
 }
 console.log(test());
 */
-
-//7.conditionals
+/*
+//7.types
 //prompt()함수는 창을 띄운다. 답을 할때까지 코드의 실행을 멈춰서 다른 동작은 못한다.(쓰지말자)
 const age = prompt("How old are you?");
 console.log(age);
@@ -204,3 +204,12 @@ console.log(typeof age);
 //prompt의 디폴트값이 string이기 때문에 숫자를 입력해도 문자형으로 나온다.
 //ParseInt()는 string을 number로 변환시킨다.
 console.log(typeof parseInt(age));
+*/
+
+//isNaN(): 숫자인지 판별한다. 숫자면 false 아니면 true
+const age = prompt("How old are you?");
+if(isNaN(age)){
+    console.log("Please write a number")
+}else{
+    console.log("Welcome! Your age is "+age);
+}
