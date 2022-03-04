@@ -207,6 +207,7 @@ console.log(typeof parseInt(age));
 */
 
 //isNaN(): 숫자인지 판별한다. 숫자면 false 아니면 true
+/*
 const age = prompt("How old are you?");
 if(isNaN(age) || age<0){
     console.log("Please write a number")
@@ -219,3 +220,4 @@ else if(20<=age && age<=50){
 else{
     console.log("You should not drink")
 }
+*/
