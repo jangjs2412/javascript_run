@@ -245,10 +245,22 @@ const title = document.querySelector(".hello h1");
 
 function handleTitleClick(){
     title.style.color="blue";
-    console.log("title was clicked!");
+}
+
+function titleMouseEnter(){
+    title.style.color="red";
+    title.innerText="Mouse is here!";
+}
+
+function titleMouseLeave(){
+    title.style.color="purple";
+    title.innerText="Mouse is gone!!!!!";
 }
 
 title.addEventListener("click", handleTitleClick);
+title.addEventListener("mouseenter", titleMouseEnter);
+title.addEventListener("mouseleave", titleMouseLeave);
 //title을 click하면 handleTitleClick이라는 function이 동작하길 원함
 //그래서 handleTitleClick 함수에 () 를 안넣은 것이고,
 //즉, js가 대신 실행시켜주길 바라는 것이다.
+
