@@ -254,13 +254,33 @@ function titleMouseEnter(){
 
 function titleMouseLeave(){
     title.style.color="purple";
-    title.innerText="Mouse is gone!!!!!";
+    title.innerTesxt="Mouse is gone!!!!!";
 }
 
-title.addEventListener("click", handleTitleClick);
-title.addEventListener("mouseenter", titleMouseEnter);
-title.addEventListener("mouseleave", titleMouseLeave);
+function titleWindowResize(){
+    document.body.style.backgroundColor="tomato";
+}
+
+function titleCopy(){
+    alert("Copy Now!");
+}
+
+function wifiOnline(){
+    alert("WIFI ONLINE");
+}
+
+function wifiOffline(){
+    alert("WIFI OFFLINE");
+}
+
 //title을 click하면 handleTitleClick이라는 function이 동작하길 원함
 //그래서 handleTitleClick 함수에 () 를 안넣은 것이고,
 //즉, js가 대신 실행시켜주길 바라는 것이다.
+title.addEventListener("click", handleTitleClick);
+title.addEventListener("mouseenter", titleMouseEnter);
+title.addEventListener("mouseleave", titleMouseLeave);
 
+window.addEventListener("resize", titleWindowResize);
+window.addEventListener("copy", titleCopy);
+window.addEventListener("online", wifiOnline);
+window.addEventListener("offline", wifiOffline);
