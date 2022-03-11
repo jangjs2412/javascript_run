@@ -243,12 +243,12 @@ console.log(test);
 
 const title = document.querySelector(".hello h1");
 
+//classList 우리가 class들의 목록으로 작업할수 있게끔 허용해준다.
+//className으로 사용할 경우 이전calss를 상관하지않고 모든걸 교체해 버린다.
+//classList.toggle(토큰)은 토큰이 존재하면 토큰제거, 없으면 토큰생성(토글, 스위치)
+let title_color = title.style.color;
 function handleTitleClick(){
-    if(title.style.color === "blue"){
-        title.style.color = "tomato";
-    }else{
-        title.style.color = "blue";
-    }
+    title.classList.toggle("active");
 }
 /*
 function titleMouseEnter(){
